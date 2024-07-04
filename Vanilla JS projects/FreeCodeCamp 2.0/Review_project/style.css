@@ -1,5 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f1f5f8;
+  padding: 20px;
 }
 main {
   font-family: Arial;
@@ -12,9 +23,7 @@ main {
   background-color: #40a6e9;
   width: 100px;
   height: 5px;
-  margin-top: -15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 .review {
   height: 450px;
@@ -25,9 +34,7 @@ main {
   text-align: center;
   background-color: #fff;
   border-radius: 7px;
-}
-.center-items {
-  height: 79%;
+  padding: 10px 30px;
 }
 #img {
   width: 130px;
@@ -35,20 +42,20 @@ main {
   border-radius: 50%;
   margin-top: 30px;
 }
-.center-items h2 {
+.center-items #person-name {
   color: #102a42;
 }
-.center-items h3 {
-  color: #102a42;
+.center-items #job {
   font-weight: 100;
   color: #40a6e9;
   text-transform: uppercase;
+  margin: 5px 0;
 }
 .center-items p {
   color: #254b6e;
 }
-.button-container {
-  height: 20%;
+.buttons-container {
+  margin-top: 25px;
 }
 .prev-next button {
   border: none;
@@ -62,9 +69,6 @@ main {
   background: #40a6e9;
   color: #102a42;
 }
-/* .prev-next button i {
-  font-size: large;
-} */
 .random-btn {
   margin-top: 10px;
   padding: 5px 10px;
