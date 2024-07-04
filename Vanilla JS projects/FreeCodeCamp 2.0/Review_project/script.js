@@ -1,6 +1,6 @@
 const reviewers = [
   {
-    name: "Henry Martins",
+    name: "Wayne Rooney",
     job: "G.O.A.T",
     img: "./rooney(1).jpg",
     review:
@@ -22,7 +22,7 @@ const reviewers = [
   },
   {
     name: "KEVIN De Bruyne",
-    job: "web developer",
+    job: "Best play maker",
     img: "./kdb.jpg",
     review:
       "On 10 June, he played only 36 minutes in his second Champions League final, as he suffered a hamstring injury. However, Manchester City eventually won 1–0 against Inter Milan, which completed their continental treble. After the season, De Bruyne was nominated for UEFA Men's Player of the Year Award .",
@@ -34,52 +34,52 @@ const reviewers = [
     review:
       "At the quarter-final stage of the 2006–07 UEFA Champions League, Ronaldo scored his first goals in his 30th match in the competition, scoring twice in a 7–1 win over Roma. He subsequently scored four minutes into the first semi-final leg against Milan, which ended in a 3–2 win, ",
   },
-];
+]
 
-const img = document.getElementById("img");
-const names = document.getElementById("person-name");
-const job = document.getElementById("job");
-const testimonial = document.getElementById("review");
+const img = document.getElementById("img")
+const names = document.getElementById("person-name")
+const job = document.getElementById("job")
+const testimonial = document.getElementById("review")
 
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
-const randomBtn = document.querySelector(".random-btn");
+const prevBtn = document.querySelector(".prev-btn")
+const nextBtn = document.querySelector(".next-btn")
+const randomBtn = document.querySelector(".random-btn")
 
-let CurrentId = 0;
+let CurrentId = 0
 
 window.addEventListener("DOMContentLoaded", function () {
-  displayPerson();
-});
+  displayPerson()
+})
 
 function displayPerson() {
-  const person = reviewers[CurrentId];
+  const person = reviewers[CurrentId]
 
-  img.src = person.img;
-  names.textContent = person.name;
-  job.textContent = person.job;
-  testimonial.textContent = person.review;
+  img.src = person.img
+  names.textContent = person.name
+  job.textContent = person.job
+  testimonial.textContent = person.review
 }
 
 nextBtn.addEventListener("click", function () {
-  CurrentId++;
+  CurrentId++
   if (CurrentId > reviewers.length - 1) {
-    CurrentId = 0;
+    CurrentId = 0
   }
-  console.log(CurrentId);
-  displayPerson();
-});
+  // console.log(CurrentId);
+  displayPerson()
+})
 
 prevBtn.addEventListener("click", function () {
-  CurrentId--;
+  CurrentId--
   if (CurrentId < 0) {
-    CurrentId = reviewers.length - 1;
+    CurrentId = reviewers.length - 1
   }
-  console.log(CurrentId);
-  displayPerson();
-});
+  // console.log(CurrentId)
+  displayPerson()
+})
 
 randomBtn.addEventListener("click", function () {
-  CurrentId = Math.floor(Math.random() * reviewers.length);
-  console.log(CurrentId);
-  displayPerson();
-});
+  CurrentId = Math.floor(Math.random() * reviewers.length)
+  console.log(CurrentId)
+  displayPerson()
+})
