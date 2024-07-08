@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6735bb4f83.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Input field</title>
+  </head>
+  <body>
+    <form action="" class="box">
+      <div class="input__wrapper">
+        <input
+          id="password"
+          type="password"
+          class="input__field"
+          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+          placeholder="Enter your password"
+        />
+        <label for="password" class="input__label">Password</label>
+        <img
+          src="./images/eye.png"
+          title="Eye Icon"
+          class="input__icon"
+          alt="Eye Icon"
+        />
+      </div>
+    </form>
+    <script src="./app.js"></script>
+  </body>
+</html>
