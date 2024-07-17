@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --GREEN: hsl(75, 94%, 57%);
+
+  /* ### Neutral */
+
+  --WHITE: hsl(0, 0%, 100%);
+  --GREY: hsl(0, 0%, 20%);
+  --DARK-GREY: hsl(0, 0%, 12%);
+  --OFF-BLACK: hsl(0, 0%, 8%);
+
+  /* FONT */
+
+  --MAIN-FONT: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-size: 14px;
+  background-color: var(--OFF-BLACK);
+  color: var(--WHITE);
+  font-family: var(--MAIN-FONT);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 90%;
+  max-width: 600px;
+  height: 90%;
+  max-height: 800px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: var(--DARK-GREY);
+  padding: 20px;
+}
+
+.main .info {
+  height: 40%;
+}
+
+.main .info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.avatar_header {
+  margin-bottom: 10px;
+}
+
+.address {
+  color: var(--GREEN);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.social_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 60%;
+  min-height: 250px;
+}
+
+.link {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--GREY);
+  border-radius: 10px;
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--WHITE);
+  font-weight: 600;
+}
